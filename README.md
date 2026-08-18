@@ -16,11 +16,33 @@ acotado a un presupuesto de **1,900 AI Credits** por usuario/mes.
 
 ## Puesta en marcha
 
+> **Importante:** clona en una ruta local como `C:\dev`. **No** lo pongas en OneDrive,
+> Dropbox ni ninguna carpeta sincronizada: el modo Agent escribe muchos archivos seguidos
+> y los bloqueos de sincronización lo rompen a mitad del ejercicio.
+
 ```bash
+git clone https://github.com/tinocoh/ghcp-lab-1900.git C:/dev/ghcp-lab-1900
+cd C:/dev/ghcp-lab-1900
 npm install
-npm test          # 0 pruebas: ese es el punto de partida
-npm start         # http://localhost:3000/health
 ```
+
+Abre la carpeta en VS Code y verifica la línea base:
+
+```bash
+npm test          # "No tests found": ese cero es el punto de partida
+npm start         # http://localhost:3000/health -> {"estado":"ok",...}
+```
+
+Cuando VS Code te ofrezca instalar las extensiones recomendadas, acéptalas:
+son **GitHub Copilot** y **GitHub Copilot Chat**.
+
+## Requisitos
+
+| Requisito | Versión |
+|---|---|
+| Visual Studio Code | 1.100 o superior (para el modo Plan) |
+| Node.js | 20 o superior |
+| Licencia | GitHub Copilot Business (o superior) asignada y activa |
 
 ## Reglas del laboratorio
 

@@ -1,0 +1,25 @@
+{
+  "name": "ghcp-lab-1900",
+  "version": "1.0.0",
+  "description": "Laboratorio guiado de GitHub Copilot Business en VS Code, acotado a 1900 AI Credits",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:cov": "jest --coverage"
+  },
+  "keywords": ["copilot", "lab", "demo"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "passWithNoTests": true,
+    "collectCoverageFrom": ["src/**/*.js"]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  // ---------------------------------------------------------------------
+  // Ajustes del laboratorio GHCP acotado a 1,900 AI Credits.
+  // Cada ajuste esta aqui por una razon de costo o de control.
+  // ---------------------------------------------------------------------
+
+  // Autocompletado inline: NO consume AI Credits. Siempre encendido.
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+
+  // Next Edit Suggestions: NO consume AI Credits. Siempre encendido.
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  // PALANCA DE COSTO #1
+  // Limita cuantas iteraciones internas puede encadenar el modo Agent
+  // en un solo turno. Cada iteracion consume tokens y por lo tanto creditos.
+  // Default de VS Code: 25. En el laboratorio lo bajamos a 12.
+  "chat.agent.maxRequests": 12,
+
+  // PALANCA DE COSTO #2
+  // Nunca auto-aprobar herramientas: el participante ve y autoriza cada
+  // accion del agente, lo que evita bucles no supervisados.
+  "chat.tools.autoApprove": false,
+
+  // Reduce llamadas adicionales que no aportan al guion del laboratorio.
+  "github.copilot.chat.followUps": "never",
+  "github.copilot.chat.scopeSelection": false,
+
+  // Busqueda semantica del workspace: mejora la calidad del contexto en
+  // Ask y Agent, lo que reduce reintentos (y por lo tanto creditos).
+  "github.copilot.chat.codesearch.enabled": true,
+
+  // Instrucciones personalizadas desde archivo (Bloque 7).
+  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
+  "chat.promptFiles": true,
+
+  // Higiene del editor para que las demos se vean limpias.
+  "editor.formatOnSave": false,
+  "files.eol": "\n",
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}

@@ -1,0 +1,15 @@
+{
+  "cliente": "ACME-001",
+  "pais": "MX",
+  "tipoCliente": "B",
+  "plazoMeses": 18,
+  "lineas": [
+    { "sku": "TEC-100", "unidades": 12, "precioUnitario": 249.9 },
+    { "sku": "TEC-220", "unidades": 3, "precioUnitario": 1899.0 },
+    { "sku": "ACC-011", "unidades": 40, "precioUnitario": 19.5 }
+  ],
+  "descuentos": [
+    { "tipo": 2, "valor": 5 },
+    { "tipo": 1, "valor": 150 }
+  ]
+}

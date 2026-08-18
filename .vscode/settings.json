@@ -19,6 +19,10 @@
   // Limita cuantas iteraciones internas puede encadenar el modo Agent
   // en un solo turno. Cada iteracion consume tokens y por lo tanto creditos.
   // Default de VS Code: 25. En el laboratorio lo bajamos a 12.
+  // Nota: este ajuste es del nucleo de VS Code y su nombre puede cambiar
+  // entre versiones. Si aparece subrayado en amarillo, no es un error:
+  // significa que tu version usa otro nombre. El limite tambien se puede
+  // imponer siempre desde el prompt ("maximo 3 intentos").
   "chat.agent.maxRequests": 12,
 
   // PALANCA DE COSTO #2
@@ -27,7 +31,6 @@
   "chat.tools.autoApprove": false,
 
   // Reduce llamadas adicionales que no aportan al guion del laboratorio.
-  "github.copilot.chat.followUps": "never",
   "github.copilot.chat.scopeSelection": false,
 
   // Busqueda semantica del workspace: mejora la calidad del contexto en
@@ -36,7 +39,6 @@
 
   // Instrucciones personalizadas desde archivo (Bloque 7).
   "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-  "chat.promptFiles": true,
 
   // Higiene del editor para que las demos se vean limpias.
   "editor.formatOnSave": false,

@@ -1,4 +1,8 @@
 {
+  // En versiones recientes de VS Code, GitHub Copilot (autocompletado y chat)
+  // viene INTEGRADO y no aparece aqui: no necesitas instalar nada.
+  // Esta recomendacion solo aplica a versiones anteriores, donde Copilot
+  // se instalaba como extension del marketplace.
   "recommendations": [
     "GitHub.copilot",
     "GitHub.copilot-chat"
